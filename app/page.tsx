@@ -22,12 +22,6 @@ export default function Home() {
                     Pick a Template for a store layout, with order management,
                     sales history, analytics, and more
                   </p>
-                  <button
-                    className="active:bg-[#5B45BB] hover:bg-[#5F56D6] bg-[#6366F1] text-white text-center rounded-md px-4 py-3 transition ease-in-out duration-150 sm:w-[180px] text-md font-semibold"
-                    type="submit"
-                  >
-                    Register & Pick a Store Today
-                  </button>
                 </div>
                 <img src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695241291/ocomni-lp-fin_cj7y95.svg"></img>
               </div>
@@ -50,17 +44,11 @@ export default function Home() {
             <div className="w-full max-w-xl mt-2">
               <div className="flex flex-col justify-center pt-10 mt-12">
                 <img src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695241291/ocomni-lp-fin_cj7y95.svg"></img>
-                <div className="self-center pr-10">
-                  <p className="mb-10 text-xl leading-normal text-left text-slate-400">
+                <div>
+                  <p className="mb-10 text-xl leading-normal text-center text-slate-400">
                     Pick a Template for a store layout, with order management,
                     sales history, analytics, and more...
                   </p>
-                  <button
-                    className="active:bg-[#5B45BB] hover:bg-[#5F56D6] bg-[#6366F1] text-white text-center rounded-md px-4 py-3 transition ease-in-out duration-150 sm:w-[180px] text-md font-semibold"
-                    type="submit"
-                  >
-                    Register & Pick a Store Today
-                  </button>
                 </div>
               </div>
             </div>

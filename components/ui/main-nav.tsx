@@ -42,7 +42,7 @@ export const Header: React.FC = () => {
               </h1>
             </div>
             <div className="pt-2 lg:pt-0">
-              <ul className="flex pace-x-8 rounded-2xl p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-xs lg:text-md">
+              <ul className="flex pace-x-8 rounded-2xl p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-md lg:text-md">
                 Get Started
               </ul>
             </div>
