@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  display: hidden;
+  /* this hidden seemed to get rid of the html popping through the homepage causing a right margin*/
+}
