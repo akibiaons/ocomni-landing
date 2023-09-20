@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
           <header className="flex lg:flex-row lg:h-10 h-16 justify-center lg:justify-between items-center mx-w-6xl mx-auto px-10 z-50">
             <div className="pr-8 lg:mt-0">
               <h1
-                className={`uppercase text-[#5B45BB] cursor-pointer text-2xl sm:mt-1 lg:mr-6 font-OCOMNI font-bold`}
+                className={`uppercase text-[#5B45BB] cursor-pointer text-xl sm:mt-1 lg:mr-6 font-OCOMNI font-bold`}
               >
                 Ocomni
               </h1>
