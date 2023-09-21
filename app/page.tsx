@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <div className="hidden lg:block w-[100%]">
-        <div className="grid grid-cols-8 py-20 items-start">
-          <div className="col-start-1 col-end-5 self-center mb-[10rem]">
+        <div className="grid grid-cols-8 items-start">
+          <div className="col-start-1 col-end-5 self-center pl-8 pr-2">
             <div className="grid grid-rows-2 items-bottom">
               <h1 className="text-4xl lg:text-5xl text-left font-extrabold text-slate-200">
                 Ecommerce powered by
@@ -17,14 +17,14 @@ export default function Home() {
               </p>
             </div>
             <div className="">
-              <p className="mb-10 text-xl leading-normal text-left text-slate-400">
+              <p className="text-xl leading-normal text-left text-slate-400">
                 Pick a Template for a store layout, with order management, sales
                 history, analytics, and more
               </p>
             </div>
           </div>
           {/* Below is the second part of the hero section (desktop) */}
-          <div className="col-start-5 col-end-10">
+          <div className="col-start-5 col-end-10 self-start">
             <img src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695320204/hero-section-img_coe9oz.png"></img>
           </div>
         </div>
