@@ -1,5 +1,7 @@
 // import Template from "../components/Templates"; // This import is for the templates card
 import Link from "next/navigation"; // I should import some Next/Navigation
+
+// Card imports below...
 import {
   Card,
   CardContent,
@@ -8,6 +10,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+// Accodian imports below...
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+// Icon Imports below...
 import { TbWorldWww } from "react-icons/tb";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { CiMoneyBill } from "react-icons/ci";
@@ -44,18 +55,25 @@ export default function Home() {
       <div className="hidden lg:block">
         <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
-            <Card className="rounded-xl">
-              <CardHeader className="border-2 m-10 bg-neutral-800">
-                <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
-                <CardTitle>Reduced Startup Costs</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="md:text-xl">
-                  Get your products to market quicker, and spend more time
-                  focusing on product research, selection, and marketing.
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger>What are the costs?</AccordionTrigger>
+                <AccordionContent>
+                  <Card className="rounded-xl">
+                    <CardHeader className="border-2 m-10 bg-neutral-800">
+                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <CardTitle>Reduced Startup Costs</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="md:text-xl">
+                        Get your products to market quicker, and spend more time
+                        focusing on product research, selection, and marketing.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
           {/*Cards section*/}
           <div className="lg:col-start-4 lg:col-end-7 md:pb-10 md:text-left text-left shadow-xl">
@@ -119,6 +137,7 @@ export default function Home() {
         </div>
       </div>
       {/*START OF THE BENEFITS CARD (MOBILE)*/}
+      {/* This needs to be made into an accordian at some point - 1:53pm 9/21/23 */}
       <div className="block lg:hidden">
         <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
