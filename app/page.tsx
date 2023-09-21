@@ -55,25 +55,18 @@ export default function Home() {
       <div className="hidden lg:block">
         <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
-            <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
-                <AccordionTrigger>What are the costs?</AccordionTrigger>
-                <AccordionContent>
-                  <Card className="rounded-xl">
-                    <CardHeader className="border-2 m-10 bg-neutral-800">
-                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
-                      <CardTitle>Reduced Startup Costs</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="md:text-xl">
-                        Get your products to market quicker, and spend more time
-                        focusing on product research, selection, and marketing.
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <Card className="rounded-xl">
+              <CardHeader className="border-2 m-10 bg-neutral-800">
+                <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                <CardTitle>Reduced Startup Costs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="md:text-xl">
+                  Get your products to market quicker, and spend more time
+                  focusing on product research, selection, and marketing.
+                </CardDescription>
+              </CardContent>
+            </Card>
           </div>
           {/*Cards section*/}
           <div className="lg:col-start-4 lg:col-end-7 md:pb-10 md:text-left text-left shadow-xl">
@@ -84,9 +77,9 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="md:text-xl">
-                  Our store templates come with a order management system,
-                  payment system, and store front. The ultimate all in one
-                  package for begineers.
+                  Included is order management, payment systems, and store
+                  front. The ultimate all in one package for ecommerce
+                  entrepenuers.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -141,49 +134,76 @@ export default function Home() {
       <div className="block lg:hidden">
         <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
-            <Card className="rounded-xl">
-              <CardHeader className="border-2 m-10 bg-neutral-800">
-                <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
-                <CardTitle>Reduced Startup Costs</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="md:text-xl">
-                  Get your products to market quicker, and spend more time
-                  focusing on product research, selection, and marketing.
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg">
+                  What are the costs ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Card className="rounded-xl">
+                    <CardHeader className="border-2 m-10 bg-neutral-800">
+                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <CardTitle>Reduced Startup Costs</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="md:text-xl">
+                        Get your products to market quicker, and spend more time
+                        focusing on product research, selection, and marketing.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
           {/*Cards section*/}
           <div className="lg:col-start-4 lg:col-end-7 md:pb-10 md:text-left text-left shadow-xl">
-            <Card className="rounded-xl">
-              <CardHeader className="border-2 m-10 bg-neutral-800">
-                <AiOutlineUnlock className="lg:text-3xl lg:mr-3 text-4xl" />
-                <CardTitle>All in one package</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="md:text-xl">
-                  Our store templates come with a order management system,
-                  payment system, and store front. The ultimate all in one
-                  package for begineers.
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg">
+                  What's Included ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Card className="rounded-xl">
+                    <CardHeader className="border-2 m-10 bg-neutral-800">
+                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <CardTitle>All in one package</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="md:text-xl">
+                        Our store templates come with a order management system,
+                        payment system, and store front. The ultimate all in one
+                        package for ecommerce entrepenuers.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
           <div className="lg:col-start-7 lg:col-end-10 md:pb-10 md:text-left text-left shadow-xl">
-            <Card className="rounded-xl">
-              <CardHeader className="border-2 m-10 bg-neutral-800">
-                <TbWorldWww className="lg:text-3xl lg:mr-3 text-4xl" />
-                <CardTitle>Code free, no tech</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="md:text-xl">
-                  Ocomni, templates are great for low cost and ease of access.
-                  No coding, or design knowledge is required, setup all in one
-                  day!
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg">
+                  What's Included ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <Card className="rounded-xl">
+                    <CardHeader className="border-2 m-10 bg-neutral-800">
+                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <CardTitle>Code free, no tech</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="md:text-xl">
+                        Ocomni, templates are great for low cost and ease of
+                        access. No coding, or design knowledge is required,
+                        setup all in one day!
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>
