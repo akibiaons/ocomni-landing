@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/*START OF THE BENEFITS CARD*/}
+      {/*START OF THE BENEFITS CARD (MOBILE)*/}
       <div className="block lg:hidden">
         <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
