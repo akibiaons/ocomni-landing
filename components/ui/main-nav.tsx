@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/navigation";
+import Link from "next/link";
 
 export const Header: React.FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState<number>(
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
             </div>
             <div className="pt-2 lg:pt-0">
               <ul className="flex pace-x-8 rounded-2xl p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-md lg:text-md">
-                Get Started
+                <Link href="/register">Get Started</Link>
               </ul>
             </div>
           </header>
