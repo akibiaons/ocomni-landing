@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
     <>
       <div className="hidden lg:block">
         <div
-          className={`mt-1 w-[75%] lg:h-auto sm:w-[40%] lg:w-[70%] rounded-full mx-auto backdrop-blur bg-[#f8f9fa]/50 sticky top-1 z-50 `}
+          className={`mt-1 w-[75%] lg:h-auto sm:w-[40%] lg:w-[80%] rounded-full mx-auto backdrop-blur bg-[#f8f9fa]/50 sticky top-1 z-50 `}
         >
           <header className="flex lg:flex-row lg:h-10 h-16 justify-center lg:justify-between items-center mx-w-6xl mx-auto  px-10 py-10 z-50">
             <div className="mt-8 lg:mt-0">
@@ -49,6 +49,7 @@ export const Header: React.FC = () => {
           </header>
         </div>
       </div>
+      {/*============================================================================================================================================================================================== */}
       {/* Mobile version below w/no blur bkg */}
       <div className="lg:hidden block">
         <div
@@ -63,7 +64,7 @@ export const Header: React.FC = () => {
               </h1>
             </div>
             <div className="pl-8 lg:pt-0">
-              <ul className="flex pace-x-8 rounded-lg p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-xs lg:text-md">
+              <ul className="flex pace-x-8 rounded-md p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-xs lg:text-md">
                 Get Started
               </ul>
             </div>
