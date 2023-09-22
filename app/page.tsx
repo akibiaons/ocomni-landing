@@ -61,7 +61,7 @@ export default function Home() {
                 <CardTitle>Reduced Startup Costs</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="md:text-xl">
+                <CardDescription className="md:text-xl text-slate-400">
                   Get your products to market quicker, and spend more time
                   focusing on product research, selection, and marketing.
                 </CardDescription>
@@ -76,7 +76,7 @@ export default function Home() {
                 <CardTitle>All in one package</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="md:text-xl">
+                <CardDescription className="md:text-xl text-slate-400">
                   Included is order management, payment systems, and store
                   front. The ultimate all in one package for ecommerce
                   entrepenuers.
@@ -91,7 +91,7 @@ export default function Home() {
                 <CardTitle>Code free, no tech</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="md:text-xl">
+                <CardDescription className="md:text-xl text-slate-400">
                   Ocomni, templates are great for low cost and ease of access.
                   No coding, or design knowledge is required, setup all in one
                   day!
@@ -134,7 +134,7 @@ export default function Home() {
       {/*START OF THE BENEFITS CARD (MOBILE)*/}
       {/* This needs to be made into an accordian at some point - 1:53pm 9/21/23 */}
       <div className="block lg:hidden">
-        <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10">
+        <div className="lg:grid lg:max-w-[100%] lg:grid-cols-9 lg:gap-20 lg:pt-40 lg:pb-20 md:p-8 pt-10 ">
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
@@ -148,7 +148,7 @@ export default function Home() {
                       <CardTitle>Reduced Startup Costs</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="md:text-xl">
+                      <CardDescription className="md:text-xl text-slate-400">
                         Get your products to market quicker, and spend more time
                         focusing on product research, selection, and marketing.
                       </CardDescription>
@@ -172,7 +172,7 @@ export default function Home() {
                       <CardTitle>All in one package</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="md:text-xl">
+                      <CardDescription className="md:text-xl text-slate-400">
                         Our store templates come with a order management system,
                         payment system, and store front. The ultimate all in one
                         package for ecommerce entrepenuers.
@@ -196,7 +196,7 @@ export default function Home() {
                       <CardTitle>Code free, no tech</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="md:text-xl">
+                      <CardDescription className="md:text-xl text-slate-400">
                         Ocomni, templates are great for low cost and ease of
                         access. No coding, or design knowledge is required,
                         setup all in one day!
@@ -212,7 +212,13 @@ export default function Home() {
       {/* END OF THE CARDS*/}
       {/* Start of the semplate selector cards */}
       <div className="block lg:hidden">
-        <div className="flex flex-col gap-6 px-2 rounded-xl">
+        <div className="flex flex-col gap-6 px-4 rounded-xl py-8">
+          <div className="">
+            <h3 className="mb-4 text-2xl font-semibold">Pick a template</h3>
+            <p className="text-md text-slate-400">
+              Deploy a website and test products for as low as $12/mo
+            </p>
+          </div>
           <div>
             <img
               className="rounded-xl"
