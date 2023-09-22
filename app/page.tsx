@@ -102,6 +102,8 @@ export default function Home() {
         </div>
       </div>
       {/* END OF THE CARDS*/}
+      {/* Start of the template selectors */}
+      <div></div>
       {/*=======================================================================================================================================================================================================================================*/}
       {/* Mobile is below */}
       <div className="block lg:hidden">
@@ -208,6 +210,32 @@ export default function Home() {
         </div>
       </div>
       {/* END OF THE CARDS*/}
+      {/* Start of the semplate selector cards */}
+      <div className="block lg:hidden">
+        <div className="flex flex-col gap-6 px-2 rounded-xl">
+          <div>
+            <img
+              className="rounded-xl"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
+              alt="template-1"
+            />
+          </div>
+          <div>
+            <img
+              className="rounded-xl"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
+              alt="template-2"
+            />
+          </div>
+          <div>
+            <img
+              className="rounded-xl"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
+              alt="template-3"
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
