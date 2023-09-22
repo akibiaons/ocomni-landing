@@ -57,7 +57,7 @@ export default function Home() {
           <div className="lg:col-start-1 lg:col-end-4 md:pb-10 md:text-left text-left shadow-xl">
             <Card className="rounded-xl">
               <CardHeader className="border-2 m-10 bg-neutral-800">
-                <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                <CiMoneyBill className="lg:text-2xl lg:mr-3" />
                 <CardTitle>Reduced Startup Costs</CardTitle>
               </CardHeader>
               <CardContent>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="lg:col-start-4 lg:col-end-7 md:pb-10 md:text-left text-left shadow-xl">
             <Card className="rounded-xl">
               <CardHeader className="border-2 m-10 bg-neutral-800">
-                <AiOutlineUnlock className="lg:text-3xl lg:mr-3 text-4xl" />
+                <AiOutlineUnlock className="lg:text-3xl lg:mr-3" />
                 <CardTitle>All in one package</CardTitle>
               </CardHeader>
               <CardContent>
@@ -87,7 +87,7 @@ export default function Home() {
           <div className="lg:col-start-7 lg:col-end-10 md:pb-10 md:text-left text-left shadow-xl">
             <Card className="rounded-xl">
               <CardHeader className="border-2 m-10 bg-neutral-800">
-                <TbWorldWww className="lg:text-3xl lg:mr-3 text-4xl" />
+                <TbWorldWww className="lg:text-3xl lg:mr-3" />
                 <CardTitle>Code free, no tech</CardTitle>
               </CardHeader>
               <CardContent>
@@ -103,13 +103,43 @@ export default function Home() {
       </div>
       {/* END OF THE CARDS*/}
       {/* Start of the template selectors */}
-      <div></div>
+      <div className="hidden lg:block">
+        <div className="pl-8">
+          <h3 className="mb-4 text-4xl font-semibold">Pick a template</h3>
+          <p className="text-2xl text-slate-400">
+            Deploy a website and test products for as low as $12/mo
+          </p>
+        </div>
+        <div className="flex flex-col justify-center align-middle gap-6 px-4 rounded-xl py-10">
+          <div>
+            <img
+              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
+              alt="template-1"
+            />
+          </div>
+          <div>
+            <img
+              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
+              alt="template-2"
+            />
+          </div>
+          <div>
+            <img
+              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300"
+              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
+              alt="template-3"
+            />
+          </div>
+        </div>
+      </div>
       {/*=======================================================================================================================================================================================================================================*/}
       {/* Mobile is below */}
       <div className="block lg:hidden">
         <div className="mx-6">
           <div className="py-16 md:py-32 mx-auto flex flex-col items-center">
-            <h1 className="text-4xl text-center font-extrabold text-slate-200">
+            <h1 className="text-3xl text-center font-extrabold text-slate-200">
               Ecommerce powered by
               <span className="text-[#5B45BB] font-OCOMNI"> OCOMNI</span>
             </h1>
