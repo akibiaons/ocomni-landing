@@ -49,6 +49,7 @@ export const Header: React.FC = () => {
           </header>
         </div>
       </div>
+      {/*============================================================================================================================================================================================== */}
       {/* Mobile version below w/no blur bkg */}
       <div className="lg:hidden block">
         <div
@@ -63,7 +64,7 @@ export const Header: React.FC = () => {
               </h1>
             </div>
             <div className="pl-8 lg:pt-0">
-              <ul className="flex pace-x-8 rounded-lg p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-xs lg:text-md">
+              <ul className="flex pace-x-8 rounded-md p-1 lg:p-4 text-white bg-[#5B45BB] hover:cursor-pointer hover:bg-[#5F56D6] whitespace-nowrap text-xs lg:text-md">
                 Get Started
               </ul>
             </div>
