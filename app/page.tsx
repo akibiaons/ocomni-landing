@@ -166,7 +166,7 @@ export default function Home() {
                 <AccordionContent>
                   <Card className="rounded-xl">
                     <CardHeader className="border-2 m-10 bg-neutral-800">
-                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <AiOutlineUnlock className="lg:text-2xl lg:mr-3 text-4xl" />
                       <CardTitle>All in one package</CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -190,7 +190,7 @@ export default function Home() {
                 <AccordionContent>
                   <Card className="rounded-xl">
                     <CardHeader className="border-2 m-10 bg-neutral-800">
-                      <CiMoneyBill className="lg:text-2xl lg:mr-3 text-4xl" />
+                      <TbWorldWww className="lg:text-2xl lg:mr-3 text-4xl" />
                       <CardTitle>Code free, no tech</CardTitle>
                     </CardHeader>
                     <CardContent>
