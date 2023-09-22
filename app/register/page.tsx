@@ -63,7 +63,6 @@ export default function Register() {
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
       // toast.success("Sign up was successful");
-      <Link href="ocomni.com"></Link>;
     } catch (error) {
       console.log(error);
     }
