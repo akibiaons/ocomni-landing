@@ -1,5 +1,5 @@
 // import Template from "../components/Templates"; // This import is for the templates card
-import Link from "next/navigation"; // I should import some Next/Navigation
+import Link from "next/link"; // I should import some Next/Navigation
 
 // Card imports below...
 import {
@@ -111,27 +111,33 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col justify-center align-center gap-6 px-4 rounded-xl py-10 pl-36">
-          <div className="mb-10">
-            <img
-              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
-              alt="template-1"
-            />
-          </div>
-          <div className="mb-10">
-            <img
-              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
-              alt="template-2"
-            />
-          </div>
-          <div className="mb-10">
-            <img
-              className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
-              alt="template-3"
-            />
-          </div>
+          <Link href="/register">
+            <div className="mb-10">
+              <img
+                className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
+                alt="template-1"
+              />
+            </div>
+          </Link>
+          <Link href="/register">
+            <div className="mb-10">
+              <img
+                className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
+                alt="template-2"
+              />
+            </div>
+          </Link>
+          <Link href="/register">
+            <div className="mb-10">
+              <img
+                className="rounded-xl hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
+                alt="template-3"
+              />
+            </div>
+          </Link>
         </div>
       </div>
       {/*=======================================================================================================================================================================================================================================*/}
@@ -249,36 +255,42 @@ export default function Home() {
               Deploy a website and test products for as low as $12/mo
             </p>
           </div>
-          <div className="mb-10 mt-10">
-            <img
-              className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
-              alt="template-1"
-            />
-            <p className="underline text-center text-slate-400">
-              Large Selections
-            </p>
-          </div>
-          <div className="mb-10">
-            <img
-              className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
-              alt="template-2"
-            />
-            <p className="underline text-center text-slate-400">
-              Product Showcase
-            </p>
-          </div>
-          <div className="mb-10">
-            <img
-              className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
-              src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
-              alt="template-3"
-            />
-            <p className="underline text-center text-slate-400">
-              Simple Mininalist
-            </p>
-          </div>
+          <Link href="/register">
+            <div className="mb-10 mt-10">
+              <img
+                className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352183/template-3_bavpfk.png"
+                alt="template-1"
+              />
+              <p className="underline text-center text-slate-400">
+                Large Selections
+              </p>
+            </div>
+          </Link>
+          <Link href="/register">
+            <div className="mb-10">
+              <img
+                className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-1_ydoqzm.png"
+                alt="template-2"
+              />
+              <p className="underline text-center text-slate-400">
+                Product Showcase
+              </p>
+            </div>
+          </Link>
+          <Link href="/register">
+            <div className="mb-10">
+              <img
+                className="rounded-xl translate-y-4 hover:cursor-pointer hover:translate-y-[-2rem] ease-in duration-300 shadow-xl shadow-blue-600"
+                src="https://res.cloudinary.com/dv5fxnfot/image/upload/v1695352148/template-2_dzd9gg.png"
+                alt="template-3"
+              />
+              <p className="underline text-center text-slate-400">
+                Simple Minimalist
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </>
