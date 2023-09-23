@@ -20,7 +20,7 @@ const firebaseConfig = {
 };
 
 if (typeof window !== "undefined") {
-  // Initialize Firebase Analytics here
+  const analytics = getAnalytics();
 }
 
 // Initialize Firebase
