@@ -3,6 +3,7 @@
 // React Imports
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 // Firebase imports
 import {
   getAuth,
@@ -19,11 +20,13 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 // Below I am defining the type for the pages state...
 interface FormData {
   email: string;
-  password: string;
+  password?: string;
   name: string;
+  timestamp?: any;
 }
 
 export default function Register() {
+  const router = useRouter();
   // Below I added <boolean> for typescript saftey
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
@@ -36,13 +39,13 @@ export default function Register() {
 
   const { email, password, name } = formData;
   // Added ChangeEvent, and <HTMLInputElement> for more??? I gotta get more review here in the onChange function
-  function onChange(e: ChangeEvent<HTMLInputElement>) {
+  function onChange(e: React.ChangeEvent<HTMLInputElement>) {
     setFormData((prevState) => ({
       ...prevState,
       [e.target.id]: e.target.value,
     }));
   }
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     try {
@@ -50,19 +53,21 @@ export default function Register() {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
-        password
+        password!
       );
 
-      updateProfile(auth.currentUser, {
-        displayName: name,
-      });
       const user = userCredential.user;
+      if (user) {
+        await updateProfile(user, {
+          displayName: name,
+        });
+      }
       const formDataCopy = { ...formData };
       delete formDataCopy.password;
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
-      // toast.success("Sign up was successful");
+      router.push("https://www.ocomni.com/account");
     } catch (error) {
       console.log(error);
     }
