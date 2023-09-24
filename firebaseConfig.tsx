@@ -1,3 +1,4 @@
+"use client";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -18,10 +19,6 @@ const firebaseConfig = {
   appId: "1:449648961353:web:26e36c336449e0dc7f9c98",
   measurementId: "G-GNYX31XRGZ",
 };
-
-if (typeof window !== "undefined") {
-  const analytics = getAnalytics();
-}
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);

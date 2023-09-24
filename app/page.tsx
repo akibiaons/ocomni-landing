@@ -1,3 +1,5 @@
+"use client";
+
 // import Template from "../components/Templates"; // This import is for the templates card
 import Link from "next/link"; // I should import some Next/Navigation
 
