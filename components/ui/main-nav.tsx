@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
   //   const auth = getAuth(); // I assume you might be using this, as `auth` was mentioned in your useEffect dependency list
 
   useEffect(() => {
-    // "use client"; Will try this after pushing out entire static pages to seeif that fixes ssr
+    "use client";
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
