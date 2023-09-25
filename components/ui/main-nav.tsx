@@ -1,32 +1,30 @@
-"use client";
-
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export const Header: React.FC = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(
-    window.pageYOffset
-  );
-  // Assuming you might have a state for 'setVisible', you didn't provide this in your JS code
-  const [visible, setVisible] = useState<boolean>(true);
+  // const [prevScrollPos, setPrevScrollPos] = useState<number>(
+  //   window.pageYOffset
+  // );
+  // // Assuming you might have a state for 'setVisible', you didn't provide this in your JS code
+  // const [visible, setVisible] = useState<boolean>(true);
 
   //   const auth = getAuth(); // I assume you might be using this, as `auth` was mentioned in your useEffect dependency list
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
 
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    const isVisible =
-      prevScrollPos > currentScrollPos || currentScrollPos === 0;
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.pageYOffset;
+  //   const isVisible =
+  //     prevScrollPos > currentScrollPos || currentScrollPos === 0;
 
-    setPrevScrollPos(currentScrollPos);
-    setVisible(isVisible);
-  };
+  //   setPrevScrollPos(currentScrollPos);
+  //   setVisible(isVisible);
+  // };
 
   return (
     <>
