@@ -24,6 +24,8 @@ interface FormData {
 }
 
 export default function Register() {
+  "use client";
+
   const router = useRouter();
   // Below I added <boolean> for typescript saftey
   const [showPassword, setShowPassword] = useState<boolean>(false);
