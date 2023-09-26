@@ -13,6 +13,8 @@
 // // React Icons Imports
 // import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
+import RegisterUi from "@/components/ui/register-ui";
+
 // import { toast } from "react-toastify";
 
 // Below I am defining the type for the pages state...
@@ -72,7 +74,9 @@ export default function Register() {
   // }
   return (
     <>
-      <div></div>
+      <div>
+        <RegisterUi></RegisterUi>
+      </div>
     </>
   );
 }
