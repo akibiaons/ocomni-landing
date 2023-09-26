@@ -43,7 +43,6 @@ export default function RegisterUi() {
     }));
   }
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    "use server";
     e.preventDefault();
 
     try {
