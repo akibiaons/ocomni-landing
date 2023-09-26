@@ -24,8 +24,7 @@ interface FormData {
   timestamp?: any;
 }
 
-export default function RegisterUi(props: any): ReactNode {
-  const children = { props };
+export default function RegisterUi() {
   const router = useRouter();
   // Below I added <boolean> for typescript saftey
   const [showPassword, setShowPassword] = useState<boolean>(false);
