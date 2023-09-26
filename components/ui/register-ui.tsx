@@ -1,6 +1,6 @@
 "use client";
 // React Imports
-import React, { useState, ChangeEvent, FormEvent, ReactNode } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 //Firebase imports
@@ -44,6 +44,7 @@ export default function RegisterUi() {
     }));
   }
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    "use server";
     e.preventDefault();
 
     try {
