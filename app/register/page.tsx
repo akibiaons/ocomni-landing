@@ -5,6 +5,20 @@ import RegisterUi from "@/components/ui/register-ui";
 export default function Register() {
   return (
     <>
+      {/* Disclaimer Will need to change UI to support the template selected from the previous page.*/}
+      <section className="mt-8">
+        <div className="pl-8 pr-2 lg:text-center">
+          <div className="text-slate-200 text-4xl font-semibold mb-4">
+            <h1>Register for an account</h1>
+          </div>
+          <div className="text-slate-400">
+            <p className="lg:text-lg">
+              We'll email you your template and give instructions on how to
+              login!
+            </p>
+          </div>
+        </div>
+      </section>
       <RegisterUi></RegisterUi>
     </>
   );
