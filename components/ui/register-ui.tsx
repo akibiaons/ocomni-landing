@@ -1,4 +1,4 @@
-"use client";
+"use server";
 
 // React Imports
 import React, { useState, ChangeEvent, FormEvent, ReactNode } from "react";
