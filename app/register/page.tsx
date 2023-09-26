@@ -12,17 +12,16 @@
 // import { db } from "@/firebaseConfig";
 // // React Icons Imports
 // import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import RegisterUi from "@/components/ui/register-ui";
 
 // import { toast } from "react-toastify";
 
-// // Below I am defining the type for the pages state...
-// interface FormData {
-//   email: string;
-//   password?: string;
-//   name: string;
-//   timestamp?: any;
-// }
+// Below I am defining the type for the pages state...
+interface FormData {
+  email: string;
+  password?: string;
+  name: string;
+  timestamp?: any;
+}
 
 export default function Register() {
   // const router = useRouter();
@@ -71,10 +70,9 @@ export default function Register() {
   //     console.log(error);
   //   }
   // }
-
   return (
     <>
-      <RegisterUi></RegisterUi>
+      <div></div>
     </>
   );
 }
