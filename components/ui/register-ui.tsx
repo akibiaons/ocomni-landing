@@ -74,7 +74,7 @@ export default function RegisterUi() {
       <section className="mx-auto my-14 max-w-6xl px-8 h-vh">
         <div className="my-8 max-w-[300px]  mx-auto">
           <div className="flex flex-row items-center ">
-            <div className="border-b-2 border-purple-600 w-full">
+            <div className=" border-b-2 border-purple-600 w-full">
               <h3 className="uppercase font-bold text-xs text-center mb-3 tracking-wider">
                 register
               </h3>
@@ -125,8 +125,7 @@ export default function RegisterUi() {
                 type="submit"
                 className="w-full mt-8 text px-7 py-3 font-medium text-sm rounded-sm bg-[#6366F1] text-white hover:text-white overflow-hidden transition ease-in-out duration-150 hover:bg-[#5F56D6] active:bg-[#5B45BB] "
               >
-                <Link href="/thankyou">Continue</Link>
-                {" >"}
+                <p>Continue {">"}</p>
               </button>
             </form>
           </div>
