@@ -74,12 +74,10 @@ export default function RegisterUi() {
       <section className="mx-auto my-14 max-w-6xl px-8 h-vh">
         <div className="my-8 max-w-[300px]  mx-auto">
           <div className="flex flex-row items-center ">
-            <div className="cursor-pointer border-b-2 border-purple-600 w-full">
-              <Link href="/register">
-                <h3 className="uppercase font-bold text-xs text-center mb-3 tracking-wider">
-                  register
-                </h3>
-              </Link>
+            <div className="border-b-2 border-purple-600 w-full">
+              <h3 className="uppercase font-bold text-xs text-center mb-3 tracking-wider">
+                register
+              </h3>
             </div>
           </div>
           <div>
