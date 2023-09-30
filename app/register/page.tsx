@@ -1,3 +1,4 @@
+"use client";
 import RegisterUi from "@/components/ui/register-ui";
 
 export default function Register() {
